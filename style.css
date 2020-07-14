@@ -515,7 +515,7 @@ img {
   height: 100%;
   overflow: hidden;
   position: relative;
-  padding: 20px; }
+  padding: 0px; }
   #container #sidebar_wrap {
     width: 35%;
     height: 100%;
