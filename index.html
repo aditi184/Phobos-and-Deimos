@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tic Tac Toe - JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="sidebar_wrap">
+            <div id="sidebar">
+                <div id="charachters">
+                    <div class="human">
+                        <img src="img/human.png" alt="">
+                        <div class="lh">
+                            <img src="img/lhand.png" alt="">
+                        </div>
+                        <div class="rh">
+                            <img src="img/rhand.png" alt="">
+                        </div>
+                        <div class="mouth">
+                            <img src="img/mouth.png" alt="">
+                        </div>
+                        <div class="die"></div>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="robot">
+                        <img src="img/robot.png" alt="">
+                        <div class="lh">
+                            <img src="img/lhand2.png" alt="">
+                            <div class="gun">
+                                <img src="img/gun.png" alt="">
+                            </div>
+                        </div>
+                        <div class="rh">
+                            <img src="img/rhand2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                      <label>Play Versus</label>
+                      <div class="options">
+                        <ul>
+                            <li  class="computer">COMPUTER</li>
+                            <li class="friend">FRIEND</li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="field">
+                      <label>Symbol</label>
+                      <div class="options">
+                        <ul>
+                            <li  class="x">X</li>
+                            <li class="o">O</li>
+                        </ul>
+                      </div>
+                </div> 
+
+                 <div class="field">
+                      <label>Select n</label>
+                      <div class="options" id="choose_n">
+                        <ul>
+                            <li  class="three">3</li>
+                            <li class="four">4</li>
+                            <li class="five">5</li>
+                        </ul>
+                      </div>
+                </div> 
+                     
+                <div class="field">
+                    <label>Starting Player</label>
+                    <div class="options" id="starting_player">
+                        <ul>
+                            <li class="one" >Human</li>
+                            <li class="two">Computer</li>
+                        </ul>
+                    </div>
+                </div>
+                 
+                 <div class="options">
+                <button class="button">PLAY</button>
+                </div>
+               
+            </div>
+        </div>
+        
+    <div id="board_wrap">
+            <div id="board">
+                 <canvas id="cvs" width="450" height="450">
+                      </div>
+                      <div class="gameover hide"></div>
+                      </div>
+                 </canvas>
+
+            </div>
+        </div>
+
+    <script src="options.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
