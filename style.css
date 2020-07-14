@@ -275,7 +275,7 @@ textarea {
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  /*box-shadow: 0 9px #999;*/
 }
   /* 2 */ }
 
@@ -286,6 +286,7 @@ textarea {
 button,
 input {
   /* 1 */
+ 
   background-color: #3e8e41;
   overflow: visible;
    }
@@ -300,7 +301,7 @@ select {
   /* 1 */
    background-color: #3e8e41;
    box-shadow: 0 5px #666;
-   transform: translateY(4px);
+   /*transform: translateY(4px);*/
    overflow: visible;
    text-transform: none; 
   }
@@ -353,7 +354,7 @@ fieldset {
  */
 legend {
   box-sizing: border-box;
-  /* 1 
+  /* 1 */
   color: inherit;
   /* 2 */
   display: table;
