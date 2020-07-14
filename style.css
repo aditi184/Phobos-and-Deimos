@@ -670,9 +670,9 @@ img {
         color: #fff; }
       #sidebar .field ul li:last-child {
         border-right: none; }
-  #sidebar .field .startin ul li {
+/*   #sidebar .field .starting player ul li {
     width: 50%;
-    text-align: center; }
+    text-align: center; } */
     #sidebar #choose_n ul li {
     width: 33.3%;
     text-align: center; }
