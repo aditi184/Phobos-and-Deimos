@@ -117,7 +117,7 @@ playBtn.addEventListener("click", function(){
     }
 
     init(player, OPPONENT,n );
-    //options.classList.add("hide");
+    playBtn.classList.add("hide");
 });
 
 
