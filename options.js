@@ -3,8 +3,8 @@ const options = document.querySelector(".options");
 
 const xBtn = document.querySelector(".x");
 const oBtn = document.querySelector(".o");
-const humanstartBtn = document.querySelector(".one");
-const computerstartBtn = document.querySelector(".two");
+// const humanstartBtn = document.querySelector(".one");
+// const computerstartBtn = document.querySelector(".two");
 const threeBtn = document.querySelector(".three");
 const fourBtn = document.querySelector(".four");
 const fiveBtn = document.querySelector(".five");
@@ -36,17 +36,17 @@ xBtn.addEventListener("click", function(){
     switchActive(oBtn, xBtn);
 });
 
-humanstartBtn.addEventListener("click", function(){
-     start=1;
-     computerstartBtn.style.backgroundColor = "white";
-     switchActive(computerstartBtn, humanstartBtn);
-});
+// humanstartBtn.addEventListener("click", function(){
+//      start=1;
+//      computerstartBtn.style.backgroundColor = "white";
+//      switchActive(computerstartBtn, humanstartBtn);
+// });
 
-computerstartBtn.addEventListener("click", function(){
-    start =0;
-     humanstartBtn.style.backgroundColor = "white";
-     switchActive( humanstartBtn, computerstartBtn);
-});
+// computerstartBtn.addEventListener("click", function(){
+//     start =0;
+//      humanstartBtn.style.backgroundColor = "white";
+//      switchActive( humanstartBtn, computerstartBtn);
+// });
 
 
 threeBtn.addEventListener("click", function(){
