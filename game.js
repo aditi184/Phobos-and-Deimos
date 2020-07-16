@@ -45,7 +45,7 @@ function init(player, OPPONENT, n, level){
         Column = 3;
         Row = 3;
         SPACE_SIZE = 150;
-        gameData = new Array(9);
+        gameData = new Array(9)
         Combos = [[0,1,2],
                   [3,4,5],
                   [6,7,8],
@@ -142,8 +142,8 @@ function init(player, OPPONENT, n, level){
                     let space = getIJ(id);
                     ctx.fillRect(space.j*SPACE_SIZE, space.i*SPACE_SIZE, canvas.width/n, canvas.height/n);
              }
-//              setTimeout( showGameOver(currentPlayer), 500000000000000);
-            showGameOver(currentPlayer);
+            setTimeout( showGameOver,700,currentPlayer)
+            //showGameOver(currentPlayer);
             GAME_OVER = true;
             return;
         }
@@ -199,8 +199,8 @@ function init(player, OPPONENT, n, level){
                     ctx.fillRect(space.j*SPACE_SIZE, space.i*SPACE_SIZE, canvas.width/n, canvas.height/n);
 
                     }
-
-                showGameOver(player.computer);
+                setTimeout( showGameOver,700,player.computer);
+                //showGameOver(player.computer);
                 GAME_OVER = true;
                 return;
             }
