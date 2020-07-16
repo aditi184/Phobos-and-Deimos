@@ -93,12 +93,12 @@ computerBtn.addEventListener("click", function(){
 friendBtn.addEventListener("click", function(){
     robotBtn.classList.add("hide");
     humanfriend.innerHTML = `
-           <div> <img src="img/human.png" alt="">
+           <div> <img src="img/4.png" alt="">
                         <div class="lh">
-                            <img src="img/lhand.png" alt="">
+                            <img src="img/1.png" alt="">
                         </div>
                         <div class="rh">
-                            <img src="img/rhand.png" alt="">
+                            <img src="img/2.png" alt="">
                         </div>
                         <div class="mouth">
                             <img src="img/mouth.png" alt="">
