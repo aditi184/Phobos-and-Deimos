@@ -134,8 +134,8 @@ function init(player, OPPONENT, n, level){
                     let space = getIJ(id);
                     ctx.fillRect(space.j*SPACE_SIZE, space.i*SPACE_SIZE, canvas.width/n, canvas.height/n);
              }
-             setTimeout( showGameOver(currentPlayer), 500000000000000);
-            // showGameOver(currentPlayer);
+//              setTimeout( showGameOver(currentPlayer), 500000000000000);
+            showGameOver(currentPlayer);
             GAME_OVER = true;
             return;
         }
