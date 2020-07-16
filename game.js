@@ -128,6 +128,14 @@ function init(player, OPPONENT, n, level){
         drawOnBoard(currentPlayer, i, j);
 
         if(isWinner(gameData, currentPlayer)){
+            
+            if(bestEvaluation==-Infinity){
+            if(currentPlayer==player.man){
+               addClass(document.getElementById("charachters"), 'celebrate_human');
+            }else if(currentPlayer==player.friend){
+               addClass(document.getElementById("charachters"), 'celebrate_human1');
+            }
+        }
               ctx.globalAlpha=0.5;
                  for(let j = 0; j < Combos[start].length; j++){
                     id=Combos[start][j];
