@@ -7,10 +7,12 @@
 .active{
     background-color: #011627 !important;
     color: #FFF !important;
+     /*transition: 100ms width ease-in*/
 }
 
 .hide{
     display: none;
+
 }
 
 .gameover{
@@ -46,18 +48,17 @@
     background-color: #fff;
     color: #000;
     cursor: pointer;
-    transition: 100ms width ease-in;
 }
 
 
 html {
-  font-family: 'Gloria Hallelujah', cursive;
+  /*font-family: 'Gloria Hallelujah', cursive;*/
   /* 1 */
   line-height: 1.15;
   /* 2 */
-  -ms-text-size-adjust: 100%;
+  /*-ms-text-size-adjust: 100%;*/
   /* 3 */
-  -webkit-text-size-adjust: 100%;
+  /*-webkit-text-size-adjust: 100%;*/
   /* 3 */ }
 
 /* Sections
@@ -273,7 +274,7 @@ textarea {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #52d29d;
   border: none;
   border-radius: 15px;
   /*box-shadow: 0 9px #999;*/
@@ -288,7 +289,7 @@ button,
 input {
   /* 1 */
  
-  background-color: #3e8e41;
+  background-color: #52d29d;
   overflow: visible;
    }
 
@@ -300,7 +301,6 @@ input {
 button,
 select {
   /* 1 */
-   background-color: #3e8e41;
    box-shadow: 0 5px #666;
    /*transform: translateY(4px);*/
    overflow: visible;
@@ -636,7 +636,7 @@ img {
   #sidebar #charachters.celebrate_human .human .mouth {
     display: block; }
 
-#sidebar p {
+/*#sidebar p {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 13px;
@@ -644,7 +644,7 @@ img {
   color: #b3b3b3; }
   #sidebar p a {
     color: #505050;
-    text-decoration: none; }
+    text-decoration: none; }*/
 
 #sidebar .field {
   margin-bottom: 30px; }
@@ -670,9 +670,7 @@ img {
         color: #fff; }
       #sidebar .field ul li:last-child {
         border-right: none; }
-/*   #sidebar .field .starting player ul li {
-    width: 50%;
-    text-align: center; } */
+
     #sidebar #choose_n ul li {
     width: 33.3%;
     text-align: center; }
@@ -682,6 +680,63 @@ img {
   #sidebar .field label {
     font-weight: 600;
     margin-bottom: 15px;
+    display: block; }
+
+
+
+
+    #sidebar #charachters .human1 {
+    width: 60px;
+    position: relative; }
+    #sidebar #charachters .human1 .lh {
+      position: absolute;
+      width: 46%;
+      top: 48%;
+      left: -17%;
+      transform-origin: 100% 0;
+      transition: 0.5s; }
+    #sidebar #charachters .human1 .rh {
+      position: absolute;
+      width: 46%;
+      top: 49%;
+      right: -17%;
+      transform-origin: 0 0;
+      transition: 0.5s; }
+    #sidebar #charachters .human1 .mouth {
+      position: absolute;
+      top: 31.5%;
+      width: 26%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      display: none; }
+    #sidebar #charachters .human1 .die {
+      position: absolute;
+      top: 23%;
+      display: flex;
+      width: 86%;
+      justify-content: space-around;
+      margin-left: 9%;
+      opacity: 0;
+      transition: 0.1s; }
+      #sidebar #charachters .human1 .die:before, #sidebar #charachters .human1 .die:after {
+        content: 'x';
+        background: #ffd8bb;
+        width: 13px;
+        display: inline-block;
+        height: 13px;
+        line-height: 0.4; }
+         #sidebar #charachters.celebrate_human .human1 .die {
+    transition-delay: 1s;
+    opacity: 1; }
+        #sidebar #charachters.celebrate_human1 .human .die {
+    transition-delay: 1s;
+    opacity: 1; }
+  #sidebar #charachters.celebrate_human1 .human1 .lh {
+    transform: rotate(70deg); }
+  #sidebar #charachters.celebrate_human1 .human1 .rh {
+    transform: rotate(-70deg); }
+  #sidebar #charachters.celebrate_human1 .human1 .mouth {
     display: block; }
 
 #board {
