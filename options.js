@@ -26,6 +26,7 @@ let n ;
 let level ="pro";
 
 
+//Events handlers for play vs, select level, choose your symbol, select board size options
 computerBtn.addEventListener("click", function(){
     lev.classList.remove("hide");
     robotBtn.classList.remove("hide");
@@ -147,7 +148,7 @@ playBtn.addEventListener("click", function(){
     }
 
 
-
+     //Starts a new game with chosen values
     init(player, OPPONENT,n, level );
     playBtn.classList.add("hide");
 });
