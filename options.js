@@ -13,6 +13,7 @@ const robotBtn = document.querySelector(".robot");
 const humanfriend = document.querySelector(".human1");
 const proBtn = document.querySelector(".pro");
 const noobBtn = document.querySelector(".noob");
+const lev=document.querySelector(".level");
 
 
 
@@ -22,6 +23,39 @@ const player = new Object;
 let OPPONENT;
 let n ;
 let level ="pro";
+
+
+computerBtn.addEventListener("click", function(){
+    robotBtn.classList.remove("hide");
+    humanfriend.classList.add("hide");
+    OPPONENT = "computer";
+    friendBtn.style.backgroundColor = "white";
+    switchActive(friendBtn, computerBtn);
+});
+
+
+friendBtn.addEventListener("click", function(){
+    lev.classList.add("hide");
+    robotBtn.classList.add("hide");
+    humanfriend.innerHTML = `
+           <div> <img src="img/4.png" alt="">
+                        <div class="lh">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="rh">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <div class="mouth">
+                            <img src="img/mouth.png" alt="">
+                        </div>
+                        <div class="die"></div>
+                        </div>
+        `;
+        humanfriend.classList.remove("hide");
+    OPPONENT = "friend";
+    computerBtn.style.backgroundColor = "white";
+    switchActive(computerBtn, friendBtn);
+});
 
 oBtn.addEventListener("click", function(){
     player.man = "O";
@@ -81,36 +115,7 @@ fiveBtn.addEventListener("click", function(){
 
 
  
-computerBtn.addEventListener("click", function(){
-    robotBtn.classList.remove("hide");
-    humanfriend.classList.add("hide");
-    OPPONENT = "computer";
-    friendBtn.style.backgroundColor = "white";
-    switchActive(friendBtn, computerBtn);
-});
 
-
-friendBtn.addEventListener("click", function(){
-    robotBtn.classList.add("hide");
-    humanfriend.innerHTML = `
-           <div> <img src="img/4.png" alt="">
-                        <div class="lh">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="rh">
-                            <img src="img/2.png" alt="">
-                        </div>
-                        <div class="mouth">
-                            <img src="img/mouth.png" alt="">
-                        </div>
-                        <div class="die"></div>
-                        </div>
-        `;
-        humanfriend.classList.remove("hide");
-    OPPONENT = "friend";
-    computerBtn.style.backgroundColor = "white";
-    switchActive(computerBtn, friendBtn);
-});
 
 playBtn.addEventListener("click", function(){
     if(!OPPONENT){
@@ -139,8 +144,7 @@ playBtn.addEventListener("click", function(){
         return;
     }
 
-    
-     if( OPPONENT == "computer"&& n!=3){
+    if( OPPONENT == "computer"&& n!=3){
         alert("First two moves may take some time!!");
     }
 
