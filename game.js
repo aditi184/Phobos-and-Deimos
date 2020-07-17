@@ -15,17 +15,23 @@ function init(player, OPPONENT, n, level){
         }
     }
 
-
+    //Selecting a 2D Canvas
     const canvas = document.getElementById("cvs");
     const ctx = canvas.getContext("2d");
     ctx.globalAlpha=1;
     ctx.fillStyle = "#52d29d";
+    
+    //Variables for board creation
     let board = [];
     let Column = 3;
     let Row = 3;
-    let start=0;
     let SPACE_SIZE = 150;
+    
+    //Add comment for start
+    let start=0
     let gameData = new Array(9);
+    
+    //All the winning combinations
     let Combos = [[0,1,2],
                   [3,4,5],
                   [6,7,8],
@@ -34,27 +40,16 @@ function init(player, OPPONENT, n, level){
                   [2,5,8],
                   [0,4,8],
                   [2,4,6]];
-
+    
+    
     let xImage = new Image();
     xImage.src = "img/X.png";
 
     let oImage = new Image();
     oImage.src = "img/O.png";
     
-    if(n === 3){
-        Column = 3;
-        Row = 3;
-        SPACE_SIZE = 150;
-        gameData = new Array(9);
-        Combos = [[0,1,2],
-                  [3,4,5],
-                  [6,7,8],
-                  [0,3,6],
-                  [1,4,7],
-                  [2,5,8],
-                  [0,4,8],
-                  [2,4,6]];    
-    }else if (n === 4){
+    //Conditions for changing the board variables according to the size of the board
+    if (n === 4){
         Column = 4;
         Row = 4;
         SPACE_SIZE = 112.5;
@@ -69,7 +64,7 @@ function init(player, OPPONENT, n, level){
                   [3,7,11,15],
                   [0,5,10,15],
                   [3,6,9,12]];   
-    }else{
+    }else if(n===5){
         Column = 5;
         Row = 5;
         SPACE_SIZE = 90;
@@ -87,14 +82,16 @@ function init(player, OPPONENT, n, level){
                   [0,6,12,18,24],
                   [4,8,12,16,20]];
     }
-    
+   
     let bestEvaluation = -Infinity;
     let currentPlayer = player.man;
     let GAME_OVER = false;
+    
+    //id variable to work in a single array(more convinient)
     let id=0;
-
+    
+    //This function draws the board when play button is clicked
     function drawBoard(){
-
         let id = 0
         removeClass(document.getElementById("charachters"), 'celebrate_human');
         removeClass(document.getElementById("charachters"), 'celebrate_robot');
@@ -111,7 +108,8 @@ function init(player, OPPONENT, n, level){
         }
     }
     drawBoard();
-
+    
+    //Listens to the user's click and according to that places the symbol on board
     canvas.addEventListener("click", function(event){
 
         if(GAME_OVER) return;
@@ -126,7 +124,7 @@ function init(player, OPPONENT, n, level){
         gameData[id] = currentPlayer;
 
         drawOnBoard(currentPlayer, i, j);
-
+        //checks if a move is a winning/tie/losing move
         if(isWinner(gameData, currentPlayer)){
             
             if(bestEvaluation==-Infinity){
