@@ -1,5 +1,7 @@
 function init(player, OPPONENT, n, level){
 
+    
+    //Helpers (from http://jaketrent.com/post/addremove-classes-raw-javascript/)
     function addClass(el, className) {
         if (el.classList)
         el.classList.add(className);
