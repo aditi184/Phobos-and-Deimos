@@ -1,4 +1,3 @@
-# Phobos-and-Deimos
 MICROSOFT ENGAGE 2020
 
 
@@ -68,6 +67,7 @@ Our Novelty
 Future Steps that can be added to our app:
 1)	Use of Web Workers to make the 4*4 and 5*5 moves faster.
 2)	Introduction of choice for the starting player.
+
 Challenges we faced and our Take Home Lessons from this project:
 1)	We were new to web application development. We got a taste of how applications are developed (Full Stack Development).
 2)	Understood how AI based minimax algorithm can be used for making games like tic tac toe, chess, etc.
