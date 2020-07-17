@@ -26,6 +26,7 @@ let level ="pro";
 
 
 computerBtn.addEventListener("click", function(){
+    lev.classList.remove("hide");
     robotBtn.classList.remove("hide");
     humanfriend.classList.add("hide");
     OPPONENT = "computer";
