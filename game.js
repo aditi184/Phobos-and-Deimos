@@ -58,7 +58,7 @@ function init(player, OPPONENT, n, level){
         Column = 4;
         Row = 4;
         SPACE_SIZE = 112.5;
-        gameData = new Array(12);
+        gameData = new Array(16);
         Combos = [[0,1,2,3],
                   [4,5,6,7],
                   [8,9,10,11],
