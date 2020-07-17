@@ -118,28 +118,28 @@ fiveBtn.addEventListener("click", function(){
 
 playBtn.addEventListener("click", function(){
     if(!OPPONENT){
-        computerBtn.style.backgroundColor = "red";
-        friendBtn.style.backgroundColor = "red";
+        computerBtn.style.backgroundColor = "#E9393980";
+        friendBtn.style.backgroundColor = "#E9393980";
         return;
     }
 
     if(!player.man ){
-        oBtn.style.backgroundColor = "red";
-        xBtn.style.backgroundColor = "red";
+        oBtn.style.backgroundColor = "#E9393980";
+        xBtn.style.backgroundColor = "#E9393980";
         return;
     }
 
     if(!level ){
-        proBtn.style.backgroundColor = "red";
-        noobBtn.style.backgroundColor = "red";
+        proBtn.style.backgroundColor = "#E9393980";
+        noobBtn.style.backgroundColor = "#E9393980";
         return;
     }
 
 
     if(!n ){
-        fiveBtn.style.backgroundColor = "red";
-        fourBtn.style.backgroundColor = "red";
-        threeBtn.style.backgroundColor = "red";
+        fiveBtn.style.backgroundColor = "#E9393980";
+        fourBtn.style.backgroundColor = "#E9393980";
+        threeBtn.style.backgroundColor = "#E9393980";
         return;
     }
 
