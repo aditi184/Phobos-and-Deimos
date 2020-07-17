@@ -215,7 +215,8 @@ function init(player, OPPONENT, n, level){
             currentPlayer = currentPlayer == player.man ? player.friend : player.man;
         }
     });
-
+    
+    //this function always makes the human win the game, it evaluates move in such ways(minimax algorithm)
     function noob(gameData, PLAYER){
 
         if( isWinner(gameData, player.computer) ) return { evaluation : -20 };
@@ -263,7 +264,7 @@ function init(player, OPPONENT, n, level){
     }
 
 
-
+    //Implementation of minimax algorithm(recursive), this function always makes the computer win the game
     function minimax(gameData, PLAYER){
 
         if( isWinner(gameData, player.computer) ) return { evaluation : +10 };
@@ -311,12 +312,13 @@ function init(player, OPPONENT, n, level){
     }
 
 
-
+    //puts the symbol on board
     function drawOnBoard(player, i, j){
         let img = player == "X" ? xImage : oImage;
         ctx.drawImage(img, j * SPACE_SIZE, i * SPACE_SIZE, img.width*(3/n), img.height*(3/n));
     }
 
+    //computes how many empty spaces are left for the computer to make a move
     function getEmptySpaces(gameData){
         let EMPTY = [];
 
@@ -325,7 +327,7 @@ function init(player, OPPONENT, n, level){
         }
         return EMPTY;
     }
-
+    //converts the 1D array(id) to the 2D blocks/array as on the game board
     function getIJ(id){
         for(let i = 0; i < board.length; i++){
             for(let j = 0; j < board[i].length; j++){
@@ -333,7 +335,8 @@ function init(player, OPPONENT, n, level){
             }
         }
     }
-
+    
+    //checks for the winner
     function isWinner(gameData, player){
        let i=0;
         for( i = 0; i < Combos.length; i++){
@@ -352,7 +355,7 @@ function init(player, OPPONENT, n, level){
     
         return false;
     }
-
+    //checks if it is match draw
     function isTie(gameData){
         let isBoardFill = true;
 
@@ -367,7 +370,7 @@ function init(player, OPPONENT, n, level){
     }
 
 
-     
+    //displays the game over message with the winner and play again button to start the game again
     function showGameOver(player){
         let message = player == "tie" ? "Oops No Winner" : "The Winner is";
         let imgSrc = `img/${player}.png`;
