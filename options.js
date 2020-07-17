@@ -139,6 +139,11 @@ playBtn.addEventListener("click", function(){
         return;
     }
 
+    
+     if( OPPONENT == "computer"&& n!=3){
+        alert("First two moves may take some time!!");
+    }
+
 
 
     init(player, OPPONENT,n, level );
