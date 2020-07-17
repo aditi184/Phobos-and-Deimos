@@ -1,6 +1,7 @@
 
 const options = document.querySelector(".options");
 
+// to select buttons
 const xBtn = document.querySelector(".x");
 const oBtn = document.querySelector(".o");
 const threeBtn = document.querySelector(".three");
@@ -16,7 +17,7 @@ const noobBtn = document.querySelector(".noob");
 const lev=document.querySelector(".level");
 
 
-
+// gameover element
 const gameOverElement = document.querySelector(".gameover");
 
 const player = new Object;
@@ -114,10 +115,6 @@ fiveBtn.addEventListener("click", function(){
 });
 
 
-
- 
-
-
 playBtn.addEventListener("click", function(){
     if(!OPPONENT){
         computerBtn.style.backgroundColor = "red";
@@ -155,13 +152,13 @@ playBtn.addEventListener("click", function(){
     playBtn.classList.add("hide");
 });
 
-
+// enables the user to select only one option
 function switchActive(off, on){
     off.classList.remove("active");
     on.classList.add("active");
 }
 
-
+// enables the user to select only one option
 function switchActive1(off1, off2, on){
     off1.classList.remove("active");
     off2.classList.remove("active");
