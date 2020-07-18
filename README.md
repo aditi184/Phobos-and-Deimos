@@ -78,7 +78,7 @@ Our Novelty
 
 
 Future Steps that can be added to our app:
-1)	Use of Web Workers to make the 4*4 and 5*5 moves faster.
+1)	Use of Web Workers to make the 4×4 and 5×5 moves faster.
 2)	Introduction of choice for the starting player.
 
 
@@ -103,3 +103,4 @@ References:
 6)	https://www.youtube.com/watch?v=KU9Ch59-4vw
 7)	https://www.youtube.com/watch?v=6ELUvkSkCts
 
+A drive link to this technical report: 
