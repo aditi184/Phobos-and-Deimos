@@ -35,17 +35,18 @@ Introduction:  We built a web application to entertain our crew by engaging them
 
 
 Architecture of our Application:
-
-
-
-
-      
+1.Created Web App in sublime and Visual Studio.
+2.Deployed the Web App in AWS.
 
 
 
 Workflow:
-
- 
+1.Chose Project: Tic Tac Toe
+2.Learnt about Minimax Algorithm
+3.Learnt basics of Web App Development
+4.Learnt JavaScript, HTML, CSS
+5.Created the project
+6. Deployed it on Cloud Service
 
 
 
@@ -53,7 +54,7 @@ About the files
 1.	Index.html: This html file has the basic layout of our application and some buttons. We have styled the app using CSS.
 2.	Style.css: This has the code to make our web application look appealing to the user.
 3.	Options.js: It contains the code for creating buttons and recording the user’s choices of playing the games. If a user doesn’t select a button required for a match, the button glows red. Play button works only when the user has selected all the buttons required for a match. When the play button is hit, function init is called. This is the main function of our code, where the minimax algorithm is implemented. Control moves to init function in the game.js file.
-4.	Game.js: Here the canvas is selected where the game has to be played. It creates all the variables required for implementing the minimax algorithm. When the user selects noob level, then the minimax algorithm is implemented in such a way that it will always make the user win. When the user selects pro level, it becomes an unbeatable game. 
+4.	Game.js: Here the canvas is selected where the game has to be played. It creates all the variables required for implementing the minimax algorithm. When the user selects noob level, then the minimax algorithm is implemented in such a way that it will always make the user win. When the user selects pro level, it becomes an unbeatable game. Also included animation for winner's celebration.
 5.	Img Folder: It contains all the images that we used in our web application.
 (All the variable and functions names are self-explanatory as well as required comments have been added to understand the code.)
 
