@@ -44,7 +44,7 @@ Workflow:
 1.Chose Project: Tic Tac Toe
 2.Learnt about Minimax Algorithm
 3.Learnt basics of Web App Development
-4.Learnt JavaScript, HTML, CSS
+4.Learnt basics of JavaScript, HTML, CSS
 5.Created the project
 6. Deployed it on Cloud Service
 
@@ -85,7 +85,7 @@ Future Steps that can be added to our app:
 
 
 Challenges we faced and our Take Home Lessons from this project:
-1)	We were new to web application development. We got a taste of how applications are developed (Full Stack Development).
+1)	We were new to web application development. We got an introduction to how applications are developed (Full Stack Development).
 2)	Understood how AI based minimax algorithm can be used for making games like tic tac toe, chess, etc.
 3)	Learned new programming languages: JS.
 4)	Learned to work on front end also this time. 
