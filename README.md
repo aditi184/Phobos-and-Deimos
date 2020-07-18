@@ -1,4 +1,4 @@
-                                                       MICROSOFT ENGAGE 2020
+                                                 MICROSOFT ENGAGE 2020
 
 
 
@@ -8,8 +8,8 @@
 
 
 
-                                                 ENTERTAINING THE CREW: TIC TAC TOE
-                                                         Technical Report
+                                           ENTERTAINING THE CREW: TIC TAC TOE
+                                                    Technical Report
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-                                                    Aditi Khandelwal*, Aditi Rai#
-                                                        Undergraduate Students
-                                                 Indian Institute of Technology, Delhi
-                                     (*: Department of Electrical Engineering, aditi184@gmail.com)
-                                   (#: Department of Mathematics and Computing, milirai26@gmail.com)
+                                               Aditi Khandelwal*, Aditi Rai#
+                                                   Undergraduate Students
+                                           Indian Institute of Technology, Delhi
+                              (*: Department of Electrical Engineering, aditi184@gmail.com)
+                            (#: Department of Mathematics and Computing, milirai26@gmail.com)
 
 
 
@@ -67,13 +67,21 @@ Our Novelty
 3.	Introduced a feature to choose the opponent. Now the game can be played with a human competitor too. 
 4.	Introduced the choice of symbol for the user. 
 5.	Details we added for User Interface/User Experience:
+
 (1)	Created zero cross symbol and Match Draw photo using Adobe Photoshop.
+
 (2)	Added another human cartoon when match is against human.
+
 (3)	Added animation details on winning.
+
 (4)	Added show game over, winner display feature and play again button when a match is complete.
+
 (5)	When someone wins a match, the winning moves gets highlighted on the tic tac toe board.
+
 (6)	Automatically the play button gets hidden, when the user hits play.
+
 (7)	The level button gets hidden when a user chooses to play against a human.
+
 
 
 
