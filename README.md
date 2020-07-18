@@ -28,6 +28,10 @@ Indian Institute of Technology, Delhi
 (*: Department of Electrical Engineering, aditi184@gmail.com)
 (#: Department of Mathematics and Computing, milirai26@gmail.com)
 Introduction:  We built a web application to entertain our crew by engaging them in playing an unbeatable Tic Tac Toe Game. We used minimax algorithm to build the web app. JavaScript, HTML and CSS were used. We hope our brilliant scientists don’t get bored in their journey of reaching the Red Planet.
+
+
+
+
 Architecture of our Application:
 
 
