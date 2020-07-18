@@ -1,13 +1,12 @@
-
 const options = document.querySelector(".options");
 
 // to select buttons
-const xBtn = document.querySelector(".x");
-const oBtn = document.querySelector(".o");
+const xButton = document.querySelector(".x");
+const oButton = document.querySelector(".o");
 const threeBtn = document.querySelector(".three");
 const fourBtn = document.querySelector(".four");
 const fiveBtn = document.querySelector(".five");
-const playBtn = document.querySelector(".button");
+const playButton = document.querySelector(".button");
 const computerBtn = document.querySelector(".computer");
 const friendBtn = document.querySelector(".friend");
 const robotBtn = document.querySelector(".robot");
@@ -21,7 +20,7 @@ const lev=document.querySelector(".level");
 const gameOverElement = document.querySelector(".gameover");
 
 const player = new Object;
-let OPPONENT;
+let opponent;
 let n ;
 let level ="pro";
 
@@ -31,7 +30,7 @@ computerBtn.addEventListener("click", function(){
     lev.classList.remove("hide");
     robotBtn.classList.remove("hide");
     humanfriend.classList.add("hide");
-    OPPONENT = "computer";
+    opponent = "computer";
     friendBtn.style.backgroundColor = "white";
     switchActive(friendBtn, computerBtn);
 });
@@ -55,26 +54,26 @@ friendBtn.addEventListener("click", function(){
                         </div>
         `;
         humanfriend.classList.remove("hide");
-    OPPONENT = "friend";
+    opponent = "friend";
     computerBtn.style.backgroundColor = "white";
     switchActive(computerBtn, friendBtn);
 });
 
-oBtn.addEventListener("click", function(){
+oButton.addEventListener("click", function(){
     player.man = "O";
     player.computer = "X";
     player.friend = "X";
-    xBtn.style.backgroundColor = "white";
-    switchActive(xBtn, oBtn);
+    xButton.style.backgroundColor = "white";
+    switchActive(xButton, oButton);
 });
 
 
-xBtn.addEventListener("click", function(){
+xButton.addEventListener("click", function(){
     player.man = "X";
     player.computer = "O";
     player.friend = "O";
-    oBtn.style.backgroundColor = "white";
-    switchActive(oBtn, xBtn);
+    oButton.style.backgroundColor = "white";
+    switchActive(oButton, xButton);
 });
 
 
@@ -116,16 +115,16 @@ fiveBtn.addEventListener("click", function(){
 });
 
 
-playBtn.addEventListener("click", function(){
-    if(!OPPONENT){
+playButton.addEventListener("click", function(){
+    if(!opponent){
         computerBtn.style.backgroundColor = "#E9393980";
         friendBtn.style.backgroundColor = "#E9393980";
         return;
     }
 
     if(!player.man ){
-        oBtn.style.backgroundColor = "#E9393980";
-        xBtn.style.backgroundColor = "#E9393980";
+        oButton.style.backgroundColor = "#E9393980";
+        xButton.style.backgroundColor = "#E9393980";
         return;
     }
 
@@ -143,14 +142,14 @@ playBtn.addEventListener("click", function(){
         return;
     }
 
-    if( OPPONENT == "computer"&& n!=3){
+    if( opponent == "computer"&& n!=3){
         alert("First two moves may take some time!!");
     }
 
 
      //Starts a new game with chosen values
-    init(player, OPPONENT,n, level );
-    playBtn.classList.add("hide");
+    init(player, opponent,n, level );
+    playButton.classList.add("hide");
 });
 
 // enables the user to select only one option
