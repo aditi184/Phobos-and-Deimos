@@ -1,4 +1,4 @@
-                                                                                    MICROSOFT ENGAGE 2020
+                                                       MICROSOFT ENGAGE 2020
 
 
 
@@ -8,8 +8,8 @@
 
 
 
-                                                                              ENTERTAINING THE CREW: TIC TAC TOE
-                                                                                        Technical Report
+                                                 ENTERTAINING THE CREW: TIC TAC TOE
+                                                         Technical Report
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-                                                                                  Aditi Khandelwal*, Aditi Rai#
-                                                                                     Undergraduate Students
-                                                                              Indian Institute of Technology, Delhi
-                                                                  (*: Department of Electrical Engineering, aditi184@gmail.com)
-                                                                  (#: Department of Mathematics and Computing, milirai26@gmail.com)
+                                                    Aditi Khandelwal*, Aditi Rai#
+                                                        Undergraduate Students
+                                                 Indian Institute of Technology, Delhi
+                                     (*: Department of Electrical Engineering, aditi184@gmail.com)
+                                   (#: Department of Mathematics and Computing, milirai26@gmail.com)
 
 
 
