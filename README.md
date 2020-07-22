@@ -105,4 +105,4 @@ References:
 7)	https://www.youtube.com/watch?v=6ELUvkSkCts
 8)  https://github.com/alialaa/js-tic-tac-toe
 
-A drive link to this technical report: 
+A drive link to this technical report: https://drive.google.com/file/d/17H9W8ikzO_CwEgZ51OFl8_ZEESfXPLp1/view?usp=sharing
