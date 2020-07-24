@@ -25,7 +25,7 @@ let n ;
 let level ="pro";
 
 
-//Events handlers for play vs, select level, choose your symbol, select board size options
+//Events handlers for play versus, select level, choose your symbol, select board size options
 computerBtn.addEventListener("click", function(){
     lev.classList.remove("hide");
     robotBtn.classList.remove("hide");
