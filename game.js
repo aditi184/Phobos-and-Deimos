@@ -49,7 +49,7 @@ function init(player, opponent, n, level){
     let oImage = new Image();
     oImage.src = "img/O.png";
     
-    //Conditions for changing the board variables according to the size of the board
+    //Conditions for changing the board variables according to the size of the game board
     if (n === 4){
         column = 4;
         row = 4;
